@@ -1,4 +1,4 @@
-# lean-natural-number-game-solutions
+# Lean-natural-number-game-solutions
 
 It's on going.
 
