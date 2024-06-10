@@ -1,0 +1,5 @@
+theorem add_right_comm (a b c : ℕ) : a + b + c = a + c + b := by
+  rw[add_comm]
+  rw[add_comm a c]
+  rw[add_assoc]
+  rfl
