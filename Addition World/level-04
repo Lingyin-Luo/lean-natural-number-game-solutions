@@ -1,0 +1,11 @@
+theorem add_assoc (a b c : ℕ) : a + b + c = a + (b + c) := by
+  induction b with b hb
+  rw[add_zero]
+  rw[zero_add]
+  rfl
+  rw[succ_add]
+  nth_rewrite 2[add_succ]
+  rw[add_succ]
+  rw[succ_add]
+  rw[hb]
+  rfl
