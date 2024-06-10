@@ -1,0 +1,10 @@
+theorem succ_add (a b : ℕ) : succ a + b = succ (a + b) := by
+
+  induction b with b hb
+  rw[add_zero]
+  rw[add_zero]
+  rfl
+  rw[add_succ a b]
+  rw[← hb]
+  rw[add_succ (succ a) b]
+  rfl
