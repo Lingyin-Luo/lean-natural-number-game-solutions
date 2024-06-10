@@ -1,0 +1,9 @@
+example : (2 : ℕ) + 2 = 4 := by
+  rw[four_eq_succ_three]
+  rw[succ_eq_add_one]
+  rw[three_eq_succ_two]
+  rw[succ_eq_add_one]
+  nth_rewrite 2[two_eq_succ_one]
+  rw[add_succ 2 1]
+  rw[← succ_eq_add_one (2+1)]
+  rfl
